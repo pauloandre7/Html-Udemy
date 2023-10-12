@@ -1,0 +1,78 @@
+- AULAS 1 e 2 -
+Nas 2 primeiras aulas, o professor tem como objetivo apresentar a estrutura
+de uma pagina web. Nesta aula ele apresenta as tags, além de exibir a estrutura
+básica de um código html, expondo a seguinte estrutura:
+<!DOCTYPE html>
+<hmtl>
+    <head>
+    <\head>
+    <body>
+    <\body>
+<\html>
+
+Na segunda aula ele explica que tudo o que aparece para o usuário está contido
+dentro da tag body, enquanto que as características comportamentais estão
+dentro da head. Cabeça e corpo, cérebro e membros. Pense sempre assim.
+Ainda na segunda aula ele apresenta a tag title, que determina o que irá
+aparecer ali na aba do navegador. Esta deve estar dentro da Head, pois não
+vai aparecer ali no corpo do site.
+Além disso, ele apresenta o parâmetro charset da tag meta, para que possamos
+colocar acentos sem problema algum.
+x-----------------------------------------------------------------------
+
+- AULA 3: Cabeçalhos --
+Nesta aula o professor introduz os cabeçalhos, que são criados com a tag H.
+Temos uma hierarquia de cabeçalhos, iniciando do 1 e indo até o 6. 
+<h1><\h1> até <h6><\h6>.
+Além disso, nesta aula o professor exibiu uma tag extra:
+<br> - Break line
+x-----------------------------------------------------------------------
+
+- AULA 4: Paragrafo --
+O parágrafo é determinado pela tag <p><\p>, a qual podemos usar para determinar
+blocos de texto. É muito mais interessante organizar o texto corretamente.
+Você pode deixar o texto sem nenhuma tag e ele irá aparecer na tela, mas isso
+não te possibilitaria fazer algumas coisas na hora de estilizar a página.
+Nesta aula foi apresentada uma tag extra:
+<hr> - Horizontal Rule (linha horizontal)
+x-----------------------------------------------------------------------
+
+- AULA 5: Formatações de texto --
+Aqui o professor recomenda umas tags para formatação de texto, como 
+<strong> (negrito), <em>(italico), <strike>(tracejado) e <u>(underline).
+x-----------------------------------------------------------------------
+
+- AULA 6: Listas ordenadas e não ordenadas --
+Aqui o professor apresenta as listas ordenadas e não ordenadas. As ordenadas
+são listas que possuem uma ordenação por número, romanos, alfabeto e etc.
+As listas não ordenadas são listas sem algo que indique ordem.
+
+<ul type="circle"> (circle, square, disc)
+    <li>Doce<\li>
+    <li>Jujuba<\li>
+<\ul>
+
+<ol type="A"> (A, I, 1, a, i)
+    <li>Comida favorita?<\li>
+    <li>Carro favorito?<\li>
+<\ol>
+OBS: o professor destacou a importância dessas listas para ajudar na criação
+de menus para o site.
+Além dessas duas coisas, o professor ensinou a fazer comentários no código
+usando a tag <!-- -->.
+x-----------------------------------------------------------------------
+
+- AULA 8: Imagens -- 
+Nesta aula o professor abordou imagens. Ele começa baixando uma imagem 
+e salvando em uma pasta "imagens" dentro do projeto. 
+Depois, para chamar essa imagens, ele utiliza a tag <img src "pasta\arq.jpg">
+Nesta aula ele destaca que podemos utilizar links da internet nesse parâmetro
+"src", mas que não é recomendado pela falta de garantia.
+x-----------------------------------------------------------------------
+
+- AULA 9: Links --
+Nesta aula o professor aborda a tag <a href="link">Clique aqui<\a>. 
+Essa tag nos permite linkar outras páginas do projeto ou da web.
+Além disso, ele destaca a importância de uma pagina html com o nome Index,
+sendo ela a primeira página que será procurada pelo navegador. Logo, faz-se
+necessário ter a pagina inicial com o nome Index.html.
