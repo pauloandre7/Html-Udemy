@@ -1,0 +1,155 @@
+- AULAS 1 e 2 (video 9 no curso): Estrutura de um doc HTML --
+Nas 2 primeiras aulas, o professor tem como objetivo apresentar a estrutura
+de uma pagina web. Nesta aula ele apresenta as tags, além de exibir a estrutura
+básica de um código html, expondo a seguinte estrutura:
+<!DOCTYPE html>
+<hmtl>
+    <head>
+    <\head>
+    <body>
+    <\body>
+<\html>
+
+Na segunda aula ele explica que tudo o que aparece para o usuário está contido
+dentro da tag body, enquanto que as características comportamentais estão
+dentro da head. Cabeça e corpo, cérebro e membros. Pense sempre assim.
+Ainda na segunda aula ele apresenta a tag title, que determina o que irá
+aparecer ali na aba do navegador. Esta deve estar dentro da Head, pois não
+vai aparecer ali no corpo do site.
+Além disso, ele apresenta o parâmetro charset da tag meta, para que possamos
+colocar acentos sem problema algum.
+x-----------------------------------------------------------------------
+
+- AULA 3: Cabeçalhos --
+Nesta aula o professor introduz os cabeçalhos, que são criados com a tag H.
+Temos uma hierarquia de cabeçalhos, iniciando do 1 e indo até o 6. 
+<h1><\h1> até <h6><\h6>.
+Além disso, nesta aula o professor exibiu uma tag extra:
+<br> - Break line
+x-----------------------------------------------------------------------
+
+- AULA 4: Paragrafo --
+O parágrafo é determinado pela tag <p><\p>, a qual podemos usar para determinar
+blocos de texto. É muito mais interessante organizar o texto corretamente.
+Você pode deixar o texto sem nenhuma tag e ele irá aparecer na tela, mas isso
+não te possibilitaria fazer algumas coisas na hora de estilizar a página.
+Nesta aula foi apresentada uma tag extra:
+<hr> - Horizontal Rule (linha horizontal)
+x-----------------------------------------------------------------------
+
+- AULA 5: Formatações de texto --
+Aqui o professor recomenda umas tags para formatação de texto, como 
+<strong> (negrito), <em>(italico), <strike>(tracejado) e <u>(underline).
+x-----------------------------------------------------------------------
+
+- AULA 6: Listas ordenadas e não ordenadas --
+Aqui o professor apresenta as listas ordenadas e não ordenadas. As ordenadas
+são listas que possuem uma ordenação por número, romanos, alfabeto e etc.
+As listas não ordenadas são listas sem algo que indique ordem.
+
+<ul type="circle"> (circle, square, disc)
+    <li>Doce<\li>
+    <li>Jujuba<\li>
+<\ul>
+
+<ol type="A"> (A, I, 1, a, i)
+    <li>Comida favorita?<\li>
+    <li>Carro favorito?<\li>
+<\ol>
+OBS: o professor destacou a importância dessas listas para ajudar na criação
+de menus para o site.
+Além dessas duas coisas, o professor ensinou a fazer comentários no código
+usando a tag <!-- -->.
+x-----------------------------------------------------------------------
+
+- AULA 8: Imagens -- 
+Nesta aula o professor abordou imagens. Ele começa baixando uma imagem 
+e salvando em uma pasta "imagens" dentro do projeto. 
+Depois, para chamar essa imagens, ele utiliza a tag <img src "pasta\arq.jpg">
+Nesta aula ele destaca que podemos utilizar links da internet nesse parâmetro
+"src", mas que não é recomendado pela falta de garantia.
+x-----------------------------------------------------------------------
+
+- AULA 9 (video 16): Links --
+Nesta aula o professor aborda a tag <a href="link">Clique aqui<\a>. 
+Essa tag nos permite linkar outras páginas do projeto ou da web.
+Além disso, ele destaca a importância de uma pagina html com o nome Index,
+sendo ela a primeira página que será procurada pelo navegador. Logo, faz-se
+necessário ter a pagina inicial com o nome Index.html.
+Ademais, ele ainda menciona que, caso queira fazer um menuzinho. Não precisa
+especificar o endereço da página atual. Se houver uma tag <a> sem link
+especificado, o navegador irá carregar a page atual.
+x-----------------------------------------------------------------------
+
+- AULAS 10 e 11 (video 17 no curso): Tabelas --
+Nesta aula o professor começou dissertando sobre tabelas. Aqui ele apresentou
+as tags <table></table>, <tr></tr>, <td></td> e <th></th>.
+Adiante, ele deixa claro que a tag table é para informar que iremos iniciar uma tabela. 
+Neste sentido, a tag "tr" é para determinar uma table row, que é uma linha. Porém, para 
+cada linha, precisamos de uma tag "tr". Além disso, para colocarmos dados nessas "tr",
+usamos a tag "td", que significa table data. Vale ressaltar, ainda, que podemos colocar
+imagens e links nas rows.
+
+Além disso, o professor ainda falou sobre alguns atributos, como o border (tamanho da 
+borda) e o width (largura). Para o width vale um adendo: podemos passar porcentagem como
+parâmetro, onde 100% singifica que a table irá ocupar 100% da largura disponível na tela.
+No tocante à atributos, o professor ainda menciona o attr colspan, que nos permite mesclar
+as td's <td colspan="2">. No mesmo sentido nós temos o "rowspan", que serve para mesclar
+a linha de cima com a de baixo. Esse atributo é colocado dentro da td. <td rowspan="2">.
+x-----------------------------------------------------------------------
+
+- AULA 12: Formularios --
+Nesta aula o professor começa exemplificando os formularios com exemplos reais, onde ele
+apresenta sites como americanas, saraiva e walmart. Aqui, ele começa dizendo que formulários
+são para coletar dados dos usuários, que podem ser tratados com linguagem de programação. 
+
+Adiante, o professor parte para o editor de texto e começa a exibir a estrutura do forms.
+Neste ponto, ele começa mostrando a tag <form></form>, que irá delimitar o inicio e fim do
+form. Além disso, para interagir com o usuário, temos a tag <input>, que podemos utilizar
+para várias finalidades, como determinar um botão, determinar uma caixa de texto, uma caixa
+de texto para senhas, um botão de envio (submit) e etc. Tudo dependerá do parâmetro passado
+no atributo type.
+<input type="submit" value="Enviar" name="btEnviar">
+O attr name servirá na hora de utilizar linguagem de programação.
+x-----------------------------------------------------------------------
+
+- AULA 13: Mais sobre formularios --
+
+Nesta aula o professor fala um pouco mais sobre formulários. Como novidade,
+o professor começa apresentando o radio button, que se trata de um menu de seleção.
+Com o radio, podemos determinar opções restritas, onde o usuário poderá escolher apenas
+o que foi determinado.
+Para fazer o usuário escolher um ou outro, devemos agrupar os radios, usando o mesmo name.
+<input type="radio" name="rdSexo", value="M"> Masculino<br>
+<input type="radio" name="rdSexo", value="F"> Feminino<br>
+Perceba que, como os nome são iguais, iremos saber qual foi selecionado pelo attr value.
+Quando o Selecionar o feminino, o F será enviado.
+
+Além disso, o professor ainda menciona as checkbox, que podem ter mais de uma escolha.
+<input type="checkbox" name="interesses"> Futebol <br>
+<input type="checkbox" name="interesses"> Academia <br>
+
+Adiante, o professor exibe a tag selection, que nos permite determinar um combobox, que
+se trata de uma caixa com várias opções para selecionar.
+<select name="estado">
+    <option value="sp">SP</option>
+    <option value="pr">PR</option>
+</select>
+
+Com linguagem de programação poderíamos pergar o select de nome estado e ver qual opção
+foi selecionada a partir do value de cada option.
+
+Por fim o professor apresenta a tag <textarea></textarea>, que nos permite determinar uma
+caixa para textos maiores.
+x-----------------------------------------------------------------------
+
+- AULA 14: Caracteres especiais --
+Nesta aula o professor nos ensina a como usar caracteres especiais por meio de códigos do
+html. 
+Para fazer isso, você pode procurar por Html entities, que irá exibir várias tabelas com
+os códigos para os carcteres. 
+OBS: todos os codigos tem algo a ver com o nome em ingles.
+< - &lt (less than)
+> - &gt (greater than)
+& - &amp (ampersand)
+  - &nbsp (non-breaking-space, que é um espaço em branco.) 
