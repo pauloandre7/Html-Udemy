@@ -1,0 +1,70 @@
+Professor: Jamilton Damasceno
+
+- Aula 1: Introdução (video 26 no curso)--
+Nesta aula o professor começa falando sobre a sigla CSS, que significa: Cascading Style Sheet.
+Se trata de folhas de estilo em cascata, com a qual poderemos estilizar o nosso site.
+Além disso, o professor exibe a extensão de navegador web developer, para que nós consigamos
+desativar o css da página e ver a mudança.
+x -------------------------------------------------------------------------------------------
+
+- Aula 2: Inline CSS --
+
+Nesta aula o professor Jamilton começa esclarecendo a diferença entre External style sheet, 
+Inline style e Internal style sheet. O internal é quando utilizamos o CSS dentro do arquivo 
+html, enquanto que o External é para fazermos um arquivo só de html. O inline, por outro lado,
+se assemelha ao internal. O inline é a aplicação de css diretamente na linha, normalmente feita
+pelo atributo style, onde você pode passar os parâmetros css.
+x -------------------------------------------------------------------------------------------
+
+- Aula 3: internal CSS --
+Nesta aula o professor aborda internal CSS e seletores, para que possamos formatar diversas 
+tags.
+Para fazer um internal CSS, nós colocamos os comandos CSS no bloco HEAD, usando a Tag <Style>.
+Nesta aula o professor aborda os seletores, que são utilizados para formatar diversas tags de
+uma vez. 
+p{ <!-- p é o seletor -->
+    color: red; <!-- Color é a propriedade desse seletor e red é o valor para ela. -->
+}
+
+OBS: as declarações inline tem prioridade maior que a internal.
+x -------------------------------------------------------------------------------------------
+
+- Aula 3: Classes e IDs --
+No começo da aula, o professor apresenta de forma lúdica a diferença entre IDs e Classes,
+utilizando, como exemplo, um ônibus. Neste exemplo, ele diz que IDs podem ser os números das
+poltronas, que não podem ser repetidos e, quando eu chamar alguém da poltrona 6, apenas ele 
+levantará. A classe, porém, pode ser vista como o sexo dos passageiros, me permitindo chamar
+passageiros do sexo masculino e, assim, fazendo vários levantarem.
+Com esse exemplo, se entende que ID é para se usar uma única vez, enquanto que classe 
+determina um grupo, podendo se usar várias vezes.
+
+No contexto de código, o professor apresenta o uso de uma classe: Com ela nós podemos nomear
+uma formatações e chamar ela nas tags. EX:
+.azul {
+    color: blue;
+}
+Acima eu determino uma classe azul. Veja que, para determinar uma classe, utiliza-se ponto
+antes. 
+<p class="azul">
+Acima eu estou chamando a classe, mas sem a necessidade do ponto.
+
+Os IDs são para uso único. Nós podemos aplicar formatações também, assim como as classes, mas
+recomenda utilizar apenas uma única vez.
+#backprincipal{
+    background: gray;
+}
+<body id="backprincipal">
+
+Acima é declarado o ID com background e logo abaixo podemos ver a chamada desse ID.
+
+Para exemplificar melhor o uso de Classes e IDs, o professor já dá uma leve adiantada em <div>,
+onde ele diz que, em um site, podemos ter uma estrutura com Header e colunas, por exemplo.
+Dito isso, em um site, como teremos apenas um header, poderíamos então determinar um ID para
+ele, já que não vai se repetir. As classes, porém, poderiam ser utilizadas nas colunas, já que
+teríamos várias delas.
+
+OBS: olhar para os IDs e Classes com apenas uma formatação pode ser confuso, mas elas fazem 
+mais sentido quando você determina uma formatação mais robusta.
+x -------------------------------------------------------------------------------------------
+
+- Aula 4: Div e Span --
