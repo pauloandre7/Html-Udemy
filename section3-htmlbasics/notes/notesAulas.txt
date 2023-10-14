@@ -1,3 +1,5 @@
+PROFESSOR: Jamilton Damasceno
+
 - AULAS 1 e 2 (video 9 no curso): Estrutura de um doc HTML --
 Nas 2 primeiras aulas, o professor tem como objetivo apresentar a estrutura
 de uma pagina web. Nesta aula ele apresenta as tags, além de exibir a estrutura
