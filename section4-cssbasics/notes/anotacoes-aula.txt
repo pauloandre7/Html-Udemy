@@ -68,3 +68,44 @@ mais sentido quando você determina uma formatação mais robusta.
 x -------------------------------------------------------------------------------------------
 
 - Aula 4: Div e Span --
+O profesor Jamilton começa a aula inspecionando o site da amazon e mostrando as várias divs que
+são utilizadas no site. As tags divs são para dividir e estruturar o site.
+As divs podem ser vistas como containers, onde iremos colocar o conteúdo de forma estruturada,
+porém elas são de blocos, elas empilham uma em cima da outra.
+A span, porém, que foi outro conteúdo abordado, também funciona como uma div, mas ela não se
+empilha uma em cima da outra, ela continua inline, organizando uma na frente da outra.
+
+As spans podem ser utilizadas para formatar textos específicos inline, por exemplo. formatar
+uma frase específica no meio do parágrafo.
+x -------------------------------------------------------------------------------------------
+
+- Aula 5: Bordas --
+Nesta aula o professor Jamilton aborda as bordas, que nada mais são do que bordas mesmo. :3
+A borda é um estilo css, que possui 3 atributos básicos: espessura, tipo e cor.
+#conteudo{
+    border: 1px solid red; <!-- Espessura, tipo e cor-->
+}
+O mesmo codigo acima pode ser feito de forma mais trabalhosa, mas mais controlada e precisa:
+#conteudo{
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+    /*Vai ter o mesmo efeito. Note que há vários outros comandos com prefixo border
+        Tu pode ainda definir cores para cada parte da borda.
+    */
+    border-color: red green blue yellow;
+    /*Começa sempre pelo topo, entao o topo vai ser red, o vertical direito vai ser green e 
+    por aí vai...
+    TU PODE FAZER ISSO COM OS OUTROS COMANDOS TAMBÉM: border-width, style e etc.
+    Se voce colocar só dois valores, ele define o primeiro para o topo e o chao e o segundo
+    para as laterais.
+    */
+    
+
+}
+Tu pode usar a borda em várias tags html como, por exemplo a tag <body> , fazendo com que 
+tenha uma borda em volta de todo o conteúdo.
+
+Temos vários tipos de borda, tu pode pesquisar na internet os tipos de borda para colocar no 
+lugar de solid.
+Algumas: dotted, dashed, double, groove, ridge, inset, outset, none, hidden
