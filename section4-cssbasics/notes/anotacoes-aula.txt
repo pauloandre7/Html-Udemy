@@ -109,3 +109,56 @@ tenha uma borda em volta de todo o conteúdo.
 Temos vários tipos de borda, tu pode pesquisar na internet os tipos de borda para colocar no 
 lugar de solid.
 Algumas: dotted, dashed, double, groove, ridge, inset, outset, none, hidden
+x -------------------------------------------------------------------------------------------
+
+- Aula 6: Fontes e cores --
+
+Nesta aula, o professor começa mencionando as cores, deixando claro que podemos buscar pelas 
+cores online e usar o código decimal para aplicar no CSS. 
+    - Ele recomenda a busca: cores html online.
+Logo em seguida ele aborda o comando font-, que possui vários sufixos, como:
+    - font-size
+    - font-family (Aqui você define o tipo da fonte mesmo.)
+No font-family o professor utiliza o seguinte comando:
+    font-family: "Times New Roman", times, serif;
+
+    - Esse comando garante que, caso não tenha Times New Roman, utiliza então times e, caso 
+    não tenha times, utiliza qualquer uma da generic family serif. Tu pode determinar mais
+    fontes antes de determinar a fonte generica! :)
+x -------------------------------------------------------------------------------------------
+
+- Aula 7: Tamanho de textos --
+Nesta aula o professor aborda os tamanhos de textos. Logo no início ele já começa ressaltando
+alguns dos diferentes tipos de TAMANHOS que temos:
+    - px: píxel
+    - %: Tamanho relativo
+    - em: tamanho relativo ao container pai.
+    - tem outras, mas não são tão utilizadas.
+O tamanho padrão de um texto comum nos browsers é de 16px. Ao determinar tamanho 100%, ele vai 
+utilizar 100% de 16px. Se você determinar tamanho 200%, o texto terá 32px...
+
+Falando sobre containers, o tamanho padrão dele pode ser determinado em CSS. Mas lembre-se que
+o container pai é aquele que tem contato direto com o conteúdo. Ex:
+<body>
+    <div>
+        conteudo
+    </div>
+</body>
+
+    - Acima, o div é o container pai. Se não tivesse a div, o body seria o pai.
+
+Se, em css, eu determinar: div { font-size: 60px}, o tamanho padrão da div será de 60 px.
+    - Ao utilizar, então, .texto { font-size: 1em;}, o tamanho vai ser de 60 px, já que é o 
+    padrão desse container. Ao utilizar "2em", o tamanho daquele texto será de 120 px.
+    - Podes utilizar valor float também: 1.5em, 0.5em, 0.1em e etc.
+x -------------------------------------------------------------------------------------------
+
+- Aula 7: Estilos de textos --
+Nesta aula o professor aborda os estilos de texto. Logo no início, o professor começa usando
+um comando para controlar a precisão do negrito: font-weight. Com ele, podemos determinar O
+peso da fonte, que vai de 100 até 900, onde o 900 é o negrito (fonte mais gordinha).
+
+Além disso, ele utiliza o *font-style* para passar "italic" como parâmetro e transformar o texto 
+em itálico. Adiante, ele utiliza o text-decoration para passar "underline" como parâmetro e,
+assim, ter o texto com sublinhado. Além disso, podemos usar o "overline" para adicionar essa
+linha acima da palavra ou o parâmetro "line-through" para cortar a palavra com o tracejado.
