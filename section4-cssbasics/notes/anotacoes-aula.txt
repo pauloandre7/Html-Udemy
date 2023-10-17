@@ -153,7 +153,7 @@ Se, em css, eu determinar: div { font-size: 60px}, o tamanho padrão da div ser�
     - Podes utilizar valor float também: 1.5em, 0.5em, 0.1em e etc.
 x -------------------------------------------------------------------------------------------
 
-- Aula 7: Estilos de textos --
+- Aula 8: Estilos de textos --
 Nesta aula o professor aborda os estilos de texto. Logo no início, o professor começa usando
 um comando para controlar a precisão do negrito: font-weight. Com ele, podemos determinar O
 peso da fonte, que vai de 100 até 900, onde o 900 é o negrito (fonte mais gordinha).
@@ -162,3 +162,63 @@ Além disso, ele utiliza o *font-style* para passar "italic" como parâmetro e t
 em itálico. Adiante, ele utiliza o text-decoration para passar "underline" como parâmetro e,
 assim, ter o texto com sublinhado. Além disso, podemos usar o "overline" para adicionar essa
 linha acima da palavra ou o parâmetro "line-through" para cortar a palavra com o tracejado.
+x -------------------------------------------------------------------------------------------
+
+- Aula 9: Cor e imagem de fundo --
+
+Nesta aula o professor aborda mais sobre o background. Aqui, ele começa usando seletor para
+mudar a cor do body todo. body{ background-color: blue}. Mas ele ressalta que apenas o 
+"backgorund: blue" já funciona.
+
+Após abordar a cor de fundo, ele utiliza o "background-image: url()" para definir uma imagem
+de fundo. Após utilizar esse comando, ele menciona que, quando a imagem não for grande o 
+suficiente para preencher todo o background, ela se repete.
+Para controlar isso, logo abaixo o professor inseriou o comando background-repeat.
+body{
+    background-image: url([endereco]);
+    background-repeat: (repeat, no-repeat, repeat-x e repeat-y)
+    /*
+        Repeat-x: Repete apenas na horizontal
+        Repeat-y: Repete apenas na vertical
+    */
+}
+
+Além disso, o professor mostra o comando background-attachment, que tem dois parâmetros 
+possíveis: scroll e fixed.
+    - Scroll: rola junto com o scroll da tela.
+    - fixed: Se mantém fixa. Pode descer o scroll que não mudará nada.
+
+Adiante, o professor aborda o background-position, que nos permite determinar a posição da
+imagem de fundo.
+    "Background-position: center center"
+
+    - esse comando precisa de dois parâmetros: um que determina sua posição horizontal e outro
+    que determina sua posição vertical. Se colocar "left center;" ele vai deixar a imagem à
+    esquerda e centralizada no meio.
+
+Mais ao final da aula, o professor ainda aborda outra possibilidade no comando "background".
+Ele menciona a possibilidade de adicionar todas essas propriedades acima como parâmetro.
+    .fundo{
+        background: blue url('imagens/imagem.png') repeat-x fixed center top;
+        /* 
+            O primeiro parâmetro é a cor e o segundo é a imagem, sempre usando o url(), o 
+            terceiro é para repetir horizontalmente, o quarto é para manter fixo, o quinto é para
+            centralizar horizontalmente e o quinto para deixar no topo verticalmente.
+        */
+    }
+    - SEMPRE SIGA ESSA ORDEM NA HORA DE PASSAR ESSES PARÂMETROS
+x -------------------------------------------------------------------------------------------
+
+- AULA 10: CSS externo --
+
+Nesta aula o professo aborda o CSS externo, que é um modo mais interessante de se utilizar 
+CSS, já que podemos aplicar a folha de estilo em várias páginas, por exemplo.
+
+No arquivo css não tem nenhuma estrutura, basta você colocar os comandos da mesma forma que
+colocava na tag <Style></Style>. Para utilizar no html, porém, utilizamos a tag <link>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    
+    - rel: tipo de relacionamento, que no caso é folha de estilo.
+    - type: tipo do arquivo.
+    - href: endereço da folha.
+    
